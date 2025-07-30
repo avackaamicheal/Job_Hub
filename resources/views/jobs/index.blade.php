@@ -1,7 +1,9 @@
 <x-layout>
-    <x-slot:heading>
+    <x-slot:heading class="justify-between">
         Job Listings
     </x-slot:heading>
+
+
 
     <div class="space-y-4">
         @foreach ($jobs as $job)
@@ -16,7 +18,7 @@
                 </a>
         @endforeach
         <div>
-         {{ $jobs ->links() }}   
-        </div> 
+         {{ $jobs ->links() }}
+        </div>
     </div>
 </x-layout>
